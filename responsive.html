@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color: orange;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 34px;
+            text-align: center;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            border-radius: 34px;
+            text-align: center;
+            margin: 12px;
+        }
+
+        @media only screen and (max-width:1240px) {
+            .box {
+                background-color: chartreuse;
+                border-radius: 34px;
+                text-align: center;
+                margin: 12px;
+
+            }
+
+            .container {
+                flex-wrap: wrap;
+                border-radius: 12px;
+            }
+        }
+
+        @media only screen and (max-width:301px) {
+            .box {
+                background-color: rgb(196, 233, 48);
+                border-radius: 34px;
+                text-align: center;
+                display: grid;
+                margin: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h2 style="text-align: center;">Responsive Design</h2>
+    <div class="container">
+
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+
+    </div>
+</body>
+</html>
