@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function table() {
+            let ob1 = document.getElementById("t1")
+            let n = Number(ob1.value)
+
+            let table1 = document.createElement("table")
+                table1.border="1"
+            
+                document.body.append(table1)
+                for(let i = 1; i <= 10; i++){
+                    let x = n*i
+                  let r1 = document.createElement("tr")
+                  let c1 = document.createElement("td")
+                  let c2 = document.createElement("td")
+
+                  c1.innerText= n+ "*"+i
+                  c2.innerText= x
+                  r1.append(c1)
+                  r1.append(c2)
+                  table1.append(r1)
+
+                }
+            
+            
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="t1">
+    <input type="button" value="Click Here" onclick="table()">
+    <br>
+    <div id="d1">
+
+    </div>
+    
+</body>
+</html>
