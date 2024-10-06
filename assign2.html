@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>JS DOM paragraph style</title>
+    <script>
+        function js_style() {
+            let b1 = document.getElementById("t1")
+            let b2 = document.getElementById("t2")
+            let r1 = document.createElement("tr")
+            let c1 = document.createElement("td")
+            let c2 = document.createElement("td")
+            c1.innerText = b1.value
+            c2.innerText = b2.value
+            r1.append(c1)
+            r1.append(c2)
+            document.body.append(r1)
+          
+        }
+    </script>
+</head>
+<body>
+    <p id='text'>JavaScript code</p>
+    <input type="text" id="t1">
+    <input type="text" id="t2">
+    <div>
+        <button id="jsstyle" onclick="js_style()">Clike Here</button>
+    </div>
+
+
+</body>
+
+</html>
